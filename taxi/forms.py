@@ -35,6 +35,3 @@ class CarForm(forms.ModelForm):
     class Meta:
         model = Car
         fields = ("model", "manufacturer", "drivers")
-        widgets = {
-            "drivers": forms.CheckboxSelectMultiple(),
-        }
